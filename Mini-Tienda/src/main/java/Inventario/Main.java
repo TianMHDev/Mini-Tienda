@@ -47,7 +47,7 @@ public class Main {
     // Método auxiliar para agregar productos
     private static void agregarProducto(Inventario inv) {
         try {
-            String tipo = JOptionPane.showInputDialog("Tipo de producto (Alimento/Electrodoméstico):");
+            String tipo = JOptionPane.showInputDialog("Tipo de producto (Alimento/Electrodomestico):");
             if (tipo == null) return;
 
             String nombre = JOptionPane.showInputDialog("Nombre del producto:");
@@ -71,7 +71,7 @@ public class Main {
             Producto nuevo;
             if (tipo.equalsIgnoreCase("Alimento")) {
                 nuevo = new Alimento(nombre, precio);
-            } else if (tipo.equalsIgnoreCase("Electrodoméstico")) {
+            } else if (tipo.equalsIgnoreCase("Electrodomestico")) {
                 nuevo = new Electrodomestico(nombre, precio);
             } else {
                 JOptionPane.showMessageDialog(null, "Tipo no válido.");
