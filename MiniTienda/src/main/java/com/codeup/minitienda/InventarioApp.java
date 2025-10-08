@@ -70,7 +70,7 @@ public class InventarioApp {
                     int index = tienda.indexOfNombre(producto);
 
                     if (index == -1) {
-                        JOptionPane.showMessageDialog(null, "❌ Producto no encontrado.");
+                        JOptionPane.showMessageDialog(null, " Producto no encontrado.");
                     } else {
                         int cantidad = Integer.parseInt(JOptionPane.showInputDialog("¿Cuántas unidades desea comprar?"));
                         int stockActual = tienda.getStock().get(producto);
@@ -82,7 +82,7 @@ public class InventarioApp {
                             double total = precio * cantidad;
                             totalCompras += total;
                             tienda.getStock().put(producto, stockActual - cantidad);
-                            JOptionPane.showMessageDialog(null, "✅ Compra realizada. Total: $" + total);
+                            JOptionPane.showMessageDialog(null, "Compra realizada. Total: $" + total);
                         }
                     }
                     break;
@@ -130,7 +130,7 @@ public class InventarioApp {
                     break;
 
                 case "Salir":
-                    JOptionPane.showMessageDialog(null, "💸 Total gastado en la sesión: $" + totalCompras);
+                    JOptionPane.showMessageDialog(null, "Total gastado en la sesión: $" + totalCompras);
                     salir = true;
                     break;
             }
