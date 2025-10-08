@@ -4,15 +4,17 @@
  */
 package Modelos;
 
-// Subclase Alimento
-public class Alimento extends Producto {
-    public Alimento(String nombre, double precio) {
+
+
+// Subclase Electrodomestico
+public class Electrodomestico extends Producto {
+    public Electrodomestico(String nombre, double precio) {
         super(nombre, precio);
     }
 
     @Override
     public String getDescripcion() {
-        return "Alimento: " + getNombre();
+        return "Electrodoméstico: " + getNombre();
     }
 }
 
