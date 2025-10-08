@@ -16,13 +16,13 @@ public class Inventario {
     public boolean agregarProducto(Producto producto, int cantidad) {
         for (Producto p : productos) {
             if (p.getNombre().equalsIgnoreCase(producto.getNombre())) {
-                JOptionPane.showMessageDialog(null, "⚠️ El producto ya existe.");
+                JOptionPane.showMessageDialog(null, "El producto ya existe.");
                 return false;
             }
         }
         productos.add(producto);
         stock.put(producto.getNombre(), cantidad);
-        JOptionPane.showMessageDialog(null, "✅ Producto agregado correctamente.");
+        JOptionPane.showMessageDialog(null, " Producto agregado correctamente.");
         return true;
     }
 
@@ -61,7 +61,7 @@ public class Inventario {
         }
 
         if (encontrado == null) {
-            JOptionPane.showMessageDialog(null, "❌ Producto no encontrado.");
+            JOptionPane.showMessageDialog(null, " Producto no encontrado.");
             return;
         }
 
@@ -84,7 +84,7 @@ public class Inventario {
             totalCompras += subtotal;
 
             JOptionPane.showMessageDialog(null,
-                "Compra realizada ✅\n" +
+                "Compra realizada \n" +
                 "Producto: " + encontrado.getNombre() +
                 "\nCantidad: " + cantidad +
                 "\nSubtotal: $" + subtotal);
@@ -132,7 +132,7 @@ public class Inventario {
         }
 
         JOptionPane.showMessageDialog(null,
-            "📊 Estadísticas:\n" +
+            "Estadísticas:\n" +
             "Producto más caro: " + caro.getNombre() + " ($" + caro.getPrecio() + ")\n" +
             "Producto más barato: " + barato.getNombre() + " ($" + barato.getPrecio() + ")");
     }
@@ -140,7 +140,7 @@ public class Inventario {
     // Mostrar ticket final de compras
     public void mostrarTicketFinal() {
         JOptionPane.showMessageDialog(null,
-            "💰 Total de compras realizadas: $" + totalCompras +
+            "Total de compras realizadas: $" + totalCompras +
             "\nGracias por usar el sistema de inventario.");
     }
 }
