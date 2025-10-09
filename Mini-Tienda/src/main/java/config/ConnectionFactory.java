@@ -33,6 +33,7 @@ public class ConnectionFactory {
             Class.forName(driver);
 
             return DriverManager.getConnection(url, user, password);
+            
 
         } catch (Exception e) {
             throw new RuntimeException("Error al conectar a la base de datos: " + e.getMessage());
