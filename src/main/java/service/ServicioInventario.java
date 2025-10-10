@@ -4,12 +4,14 @@
  */
 package service;
 
+import java.util.List;
 import model.Producto;
 
 public interface ServicioInventario {
-    void agregarProducto(String nombre, double precio, int stock);
+    void agregarProducto(Producto producto);
+    List<Producto> obtenerInventario();
     void actualizarPrecio(int id, double nuevoPrecio);
     void actualizarStock(int id, int nuevoStock);
     void eliminarProducto(int id);
-    Producto buscarPorNombre(String nombre);
+    List<Producto> buscarPorNombre(String nombre);
 }

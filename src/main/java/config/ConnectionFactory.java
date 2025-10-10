@@ -11,8 +11,8 @@ import java.util.Properties;
 import java.io.InputStream;
 
 public class ConnectionFactory {
+    private static final String PROPERTIES_FILE = "db.properties";
 
-    private static final String PROPERTIES_FILE = "config/db.properties";
 
     public static Connection getConnection() throws SQLException {
         Properties props = new Properties();
@@ -29,7 +29,7 @@ public class ConnectionFactory {
             String password = props.getProperty("password");
             String driver = props.getProperty("driver");
 
-            Class.forName(driver); // Carga del driver
+            Class.forName(driver);
 
             return DriverManager.getConnection(url, user, password);
 
