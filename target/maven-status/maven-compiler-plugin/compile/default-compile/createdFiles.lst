@@ -1,0 +1,8 @@
+config/TestConexion.class
+app/MiniTiendaApp.class
+repository/Repositorio.class
+model/Producto.class
+service/ServicioInventario.class
+service/ServicioInventarioImpl.class
+config/ConnectionFactory.class
+repository/ProductoRepositorioImpl.class
