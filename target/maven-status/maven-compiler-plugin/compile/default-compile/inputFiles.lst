@@ -1,6 +1,5 @@
 /home/sebastian/NetBeansProjects/MiniTiendaJDBC/src/main/java/app/MiniTiendaApp.java
 /home/sebastian/NetBeansProjects/MiniTiendaJDBC/src/main/java/config/ConnectionFactory.java
-/home/sebastian/NetBeansProjects/MiniTiendaJDBC/src/main/java/config/TestConexion.java
 /home/sebastian/NetBeansProjects/MiniTiendaJDBC/src/main/java/model/Producto.java
 /home/sebastian/NetBeansProjects/MiniTiendaJDBC/src/main/java/repository/ProductoRepositorioImpl.java
 /home/sebastian/NetBeansProjects/MiniTiendaJDBC/src/main/java/repository/Repositorio.java

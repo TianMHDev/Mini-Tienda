@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"config","l":"ConnectionFactory"},{"p":"app","l":"MiniTiendaApp"},{"p":"model","l":"Producto"},{"p":"repository","l":"ProductoRepositorioImpl"},{"p":"repository","l":"Repositorio"},{"p":"service","l":"ServicioInventario"},{"p":"service","l":"ServicioInventarioImpl"}];updateSearchResults();
